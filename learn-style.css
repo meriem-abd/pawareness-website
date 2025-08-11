@@ -4,6 +4,10 @@
 body, html {
   margin: 0;
   padding: 0;
+  
+}
+.wrapper{
+  overflow-x: hidden;
 }
 
 body {
@@ -15,10 +19,12 @@ body {
   overflow-wrap: break-word;
 }
 
-
+.header{
+  overflow: visible;
+}
 .navbar {
   position: sticky;
-  z-index: 9999;
+  z-index: 1000;
   top: 0;
   display: flex;
   background-color: rgb(174, 211, 237);
@@ -70,8 +76,7 @@ footer {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   padding: 30px;
   padding-bottom: 200px;
   margin-bottom: 100px;
@@ -83,7 +88,8 @@ footer {
 }
 
 .hero-image {
-  width: 700px;
+  width: 50%;
+  height: auto;
   border-radius: 40px;
   
 }
@@ -95,6 +101,7 @@ footer {
   flex-direction: column;
   text-align: center;
   padding: 10px;
+  max-width: 50%;
 }
 
 .hero-text p {
@@ -202,6 +209,9 @@ footer {
   border-radius: 20px;
   margin-bottom: 10px;
 }
+.stray-card.flip {
+  transform: rotateY(180deg);
+}
 
 .struggles-container{
   padding-top: 100px;
@@ -215,7 +225,7 @@ footer {
 }
 
 .struggles-image {
-   width: 45%;
+  width: 45%;
   height: auto;
   border-radius: 12px;
   object-fit: cover;}
@@ -225,23 +235,29 @@ footer {
   transition: transform 0.3s ease;
    display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: space-between;
   gap: 10px;
   border-radius: 30px;
   padding: 20px;
   transition: 0.4s;
   width: 1200px;
-  margin: 10px;
+  margin: 3%;
+  background-color:rgb(250, 247, 207) ;
 }
+
 .struggles-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
+}
+.struggles-text{
+  width: 50%;
 }
 .struggles-text h1{
-  font-size: 40px;
+  font-size: 35px;
 }
 .struggles-text p{
-  font-size: 30px;
+  font-size: 20px;
 }
+
 .behavior-card {
   background-color: rgb(187, 232, 187);
 }
@@ -270,7 +286,7 @@ footer {
 }
 .matter-card{
  background-color: rgba(222, 219, 176, 0.539);
- padding: 10px;
+ padding: 1%;
  transition: 0.5s;
 }
 .matter-card:hover{
@@ -302,17 +318,22 @@ footer {
 .safe-card{
   display:flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(203, 241, 203, 0.72);
   padding: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 45%;
 }
 .unsafe-card{
   display:flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(247, 204, 204, 0.693);
   padding: 20px;
   box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.05);
+  width: 45%;
 }
 .food-item{
   display: flex;
@@ -337,6 +358,7 @@ footer {
 .ill-container{
   background-color: rgb(250, 247, 207);
   margin-top: 200px;
+  padding-bottom: 100px;
 }
 .ill-grid{
   display: grid;
@@ -348,7 +370,7 @@ footer {
   padding: 5px;
   perspective: 1000px; /* 3d effect*/
   width: 100%;
-  height: 450px;
+  height: 460px;
 }
 .ill-card-inner{
   position: relative; /*refrence box for absolute-position front/back cards */
@@ -393,6 +415,9 @@ footer {
 .ill-card:hover .ill-card-inner{
   transform: rotateY(180deg);
 }
+.ill-card-inner.flip {
+  transform: rotateY(180deg);
+}
 .ill-introduction{
   display: flex;
   justify-content: center;
@@ -422,4 +447,36 @@ footer {
   font-size: 30px;
   margin: 20px;
   text-align: center;
+}
+ .treat-button{
+  background-color: black ;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 1%;
+  transition: 0.5s;
+ }
+ .treat-button:hover{
+  background-color:bisque;
+  color: black;
+  transform: scale(1.05);
+ }
+ .button-container{
+  display: flex;
+  justify-content: flex-end;
+ }
+ /*animation*/
+ .left{
+  opacity: 0;
+ transform: translateX(-100px);
+ transition: all 0.8s ease;
+}
+.right{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease;
+}
+.shown{
+  opacity: 1;
+  transform: translateX(0);
 }

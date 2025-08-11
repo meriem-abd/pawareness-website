@@ -72,6 +72,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 .hero-text{
   max-width: 50%;
@@ -92,6 +93,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 40%;
+    text-align: center;
 }
 .waste{
     display: flex;
@@ -99,6 +102,7 @@ footer {
     align-items: center;
     background-color: rgb(250, 247, 207);
     padding: 3%;
+    
 }
 .waste h1{
     width: 30%;
@@ -114,9 +118,44 @@ footer {
   margin: 2%;
   background-color: aliceblue;
   max-width: 40%;
+  gap: 2%;
 }
 .waste-image{
    display: flex;
    flex-direction: column;
    max-width: 40%;
+}
+.recipes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.recipes h1{
+  font-size: 40px;
+}
+.recipe-card{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: left;
+ background-color: rgb(250, 247, 207);
+ margin: 2%;
+ padding: 2%;
+ border-radius: 30px;
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+.recipe-card img{
+  max-width: 20%;
+  border-radius: 30px;
+}
+.separator{
+height:400px;
+width: 1%;
+background-color: black;
+}
+.steps{
+  border-left: 1px solid gray;
+  padding-left: 4%;
 }

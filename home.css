@@ -1,19 +1,12 @@
-<!DOCTYPE html> 
-<html lang="en-US">
-<head>
-  <title>catsawareness</title>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet"> 
-  <style>
-                       
-    /*  general  */
+ /*  general  */
     * { box-sizing: border-box;}
 
     body, html {
       margin: 0;
       padding: 0;
+    }
+    .wrapper{
+     overflow-x: hidden;
     }
 
     body {
@@ -32,6 +25,7 @@
       align-items: center;
       margin: 0px;
       padding: 5px;
+      z-index: 1000;
     }
 
     .logo {
@@ -116,6 +110,20 @@
       align-self: flex-end;
       display: flex;
       gap: 10px;
+      
+    }
+    .btn{
+      height: 30px;
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+      border-color: transparent;
+      font-size: 15px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
     }
     .involved-button{
       background-color: wheat;
@@ -130,7 +138,7 @@
       font-size: 15px;
     }
 
-    button:hover {
+    .btn:hover, button:hover {
       background-color: rgb(97, 118, 135);
       height: 35px;
       cursor: pointer;
@@ -172,6 +180,9 @@
       transition: 0.4s;
       text-decoration: none;
       color: black;
+      background-color: #ffeca0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 2%;
     }
 
     .page:hover {
@@ -200,6 +211,20 @@
       font-size: 20px;
       margin: 0px;
       padding: 0px;
+    }
+    .left{
+        opacity:0;
+        transform: translateX(-100px);
+        transition: all 0.8s ease;
+    }
+    .right{
+        opacity:0;
+        transform: translateX(100px);
+        transition: all 0.8s ease;
+    }
+    .shown{
+        opacity: 1;
+        transform: translateX(0);
     }
    
     /*    why section   */
@@ -230,7 +255,7 @@
       grid-row: 1/2;
       border-radius: 30px;
       display: flex;
-      justify-content: space-around;
+      padding: 2%;
     }
 
     .why3 {
@@ -240,7 +265,7 @@
       border-radius: 30px;
     }
     .why4 {
-      background-color: #e1d6aa;
+      background-color: #ffeca0;
       grid-column: 5/6;
       grid-row: 2/3;
       border-radius: 30px;
@@ -252,7 +277,17 @@
     .why-image2{
       width: 300px;
     }
-  
+    .why3 h1, .why4 h1{
+      font-size: 50px;
+      margin-bottom: 0px;
+    }
+    .why3, .why4{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 2%;
+      text-align: center;
+    }
     /*    footer   */
     footer {
       background-color: rgb(174, 211, 237);
@@ -263,104 +298,3 @@
       border-top-left-radius: 100%;
       border-top-right-radius: 100% ;
     }
-
-  </style>
-</head>
-<body>
-
-  <div class="navbar">
-    <a href="catsawareness.html" class="logo">
-      <img src="logo2.jpg" class="logo-image"> 
-      <p class="logo-title">Pawareness</p>
-    </a>
-    <nav class="nav-pages">
-      <a href="learn.html" class="nav-buttons" target="_blank">Learn</a>
-      <a href="act.html" class="nav-buttons">Act</a>
-      <a href="#" class="nav-buttons">About Us</a>
-    </nav>
-  </div>
-
-  <section class="hero-background">
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="pre-description">an awereness website</p>
-        <h1 class="hero-title">Contribute to the well being of cats</h1>
-        <p class="hero-description">a space to raise awareness about stray and vulnerable cats. Learn, act, and help create a safer, kinder world for our feline friends</p>
-        <div class="more-button">
-          <button>learn more about us</button>
-          <button class="involved-button">get involved</button>
-        </div>
-      </div>
-      <div>
-        <img src="istockphoto-1063193874-612x612.png" width="400px">
-      </div>
-    </div>
-  </section>
-
-  <section class="why-container">
-    <div class="why1">
-      <div class="why-text">
-      <h1>why</h1>
-      <p>Every day, cats are abandoned, misunderstood, or neglected — not because people don’t care, but because they don’t know. Pawareness is here to change that.
-        <br> We want to teach, inspire, and bring people closer to these beautiful, gentle souls who deserve so much more.</p>
-      </div>
-      <img src="why-cat.png" class="why-image">
-    </div>
-    <div class="why2">
-      <div why-text>
-      <h1>The Change Starts With Us</h1>
-      <p>Just a little awareness can stop harm, encourage kindness, and create safer communities for cats and for us.</p>
-      </div>
-      <img src="why-cat2.png" class="why-image2">
-    </div> 
-    <div class="why3">
-      <h1>400 milion cats</h1>
-      <p>are dying every year in the streets</p>
-    </div>
-   <div class="why4">
-      <h1>The Change Starts With Us</h1>
-      <p>Learning even the basics about cats can save lives. Just a little awareness can stop harm, encourage kindness, and create safer communities for cats — and for us.</p>
-    </div>
-  </section>
-
-  <main>
-    <section class="pages-section">
-      <a href="learn.html" class="page">
-        <div class="pages-text">
-          <h1 class="pages-title">Learn</h1>
-          <p class="pages-description">Learn about cats' needs, from nutrition and health to behaviour and care</p>
-          <div class="more-button">
-            <button>more</button>
-          </div>
-        </div>
-        <img src="cat-learn.jpg" class="pages-image">
-      </a>
-      <a href="act.html" class="page">
-        <img src="cat-act.jpg" class="pages-image">
-        <div class="pages-text">
-          <h1 class="pages-title">act</h1>
-          <p class="pages-description">take action to protect and support cats and become a voice for animal rights</p>
-          <div class="more-button">
-            <button>more</button>
-          </div>
-        </div>
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <section class="contact">
-      <h1>contact us</h1>
-      <a href="#">facebook</a><br>
-      <a href="#">instagram</a><br>
-      <a href="#">linkedin</a><br>
-    </section>
-    <section class="footer-pages">
-      <a href="learn.html" class="nav-buttons" target="_blank">Learn</a>
-      <a href="#" class="nav-buttons">Act</a>
-      <a href="#" class="nav-buttons">About Us</a>
-    </section>
-  </footer>
- <script src="home-script.js"></script>
-</body>
-</html>

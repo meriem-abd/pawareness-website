@@ -13,14 +13,14 @@
        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <body>
         <section class="navbar">
-            <a href="catsawareness.html" class="logo">
+            <a href="home.html" class="logo">
              <img src="logo2.jpg" class="logo-image"> 
              <p class="logo-title">Pawareness</p>
            </a>
            <nav class="nav-pages">
               <a href="learn.html" class="nav-buttons" target="_blank">Learn</a>
               <a href="act.html" class="nav-buttons">Act</a>
-               <a href="#" class="nav-buttons">About Us</a>
+               <a href="about.html" class="nav-buttons">About Us</a>
             </nav>
         </section>
         <section class="hero">
@@ -31,7 +31,7 @@
             </div>
         </section>
         
-        <section class="DIY">
+        <section class="DIY" >
             <div class="section-description">
                 <h1>do it yourself</h1>
                 <div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="article-grid">
-            <div class="article">
+            <div class="article" id="diy">
                 <img class="article-image" src="bowl1.webp">
                 <div class="article-description">
                     <h1>Water bowls</h1>
@@ -54,7 +54,7 @@
                     <h1>cats food recipes</h1>
                     <p>Simple, low-cost, and healthy recipes made from everyday ingredients—perfect for feeding both strays and pets</p>
                 </div>
-                <a class="more-button" href="diy-water.html">more</a>
+                <a class="more-button" href="recipes.html">more</a>
             </div>
             <div class="article">
                 <img class="article-image" src="shelter2.webp">
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section class="aids">
+        <section class="aids" id="ill">
             <div class="section-description">
                 <h1>special aids</h1>
                 <div>
@@ -76,46 +76,50 @@
                 </div>
             </div>
 
-            <div class="article-grid">
+            <div class="article-grid" >
             <div class="article">
                 <img class="article-image" src="treat-eye.jpg">
                 <div class="article-description">
                     <h1>treating eye infection</h1>
-                    <p>description of the craft description of the craft description of the craft description of the craft</p>
+                    <p>Caring for stray cats’ eye infections preventing discomfort and worsening conditions.</p>
                 </div>
-                <button class="more-button">more</button>
+                <a class="more-button" href="treat-eye-infection.html">more</a>
             </div>
             <div class="article">
                 <img class="article-image" src="treat-flea.avif">
                 <div class="article-description">
                     <h1>treating fleas</h1>
-                    <p>description of the craft description of the craft description of the craft description of the craft</p>
+                    <p>How to quickly help stray cats get rid of fleas and feel better.</p>
                 </div>
-                <button class="more-button">more</button>
+                <a class="more-button" href="fleas.html">more</a>
             </div>
             <div class="article">
                 <img class="article-image" src="treat-swimmer.jpeg">
                 <div class="article-description">
                     <h1>treating the swimmer syndrome</h1>
-                    <p>description of the craft description of the craft description of the craft description of the craft</p>
+                    <p>Helping kittens with swimmer syndrome learn to move and grow stronger</p>
                 </div>
-                <button class="more-button">more</button>
+                <a class="more-button" href="swimmer.html">more</a>
             </div>
-
+          <!--
              <div class="article">
                 <img class="article-image" src="treat-orphan.avif">
                 <div class="article-description">
                     <h1>caring for orphaned kittens</h1>
                     <p>description of the craft description of the craft description of the craft description of the craft</p>
                 </div>
-                <button class="more-button">more</button>
+                <a class="more-button" href="">more</a>
             </div>
+        -->
             </div>
         </section>
 
-        <section class="community">
+        <section class="community" id="Community">
             <div class="gallery-grid">
-                <h1 class="gallery-text">community involvement</h1>
+                <div class="gallery-text">
+                    <h1>community involvement</h1>
+                <p>Everyone in the community can and must help protect stray cats, every small action makes a difference</p>
+                </div>
                 <img src="butcher.jpg" class="image1">
                 <img src="cleaner.jpg" class="image2">
                 <img src="cafe.jpg" class="image3">
@@ -128,16 +132,16 @@
                 <img class="big-pic" src="ChatGPT Image Jul 30, 2025, 08_04_20 PM.png">
                 <div class="columns">
                     <div class="column">
-                        <h3>if every store and cafe put clean water bowls near their stores</h3>
-                        <p> A simple bowl of clean water can make a world of difference for stray cats, especially in warmer months. Cafés and small shops can easily place bowls outside their doors, ensuring they’re regularly cleaned and refilled. This not only keeps cats hydrated but also builds a positive image of the business within the community. A small act like this shows that kindness can be part of everyday life.</p>
+                        <h3>provide clean water bowls</h3>
+                        <p> Stores and cafés can place clean water bowls outside. Refill daily. This not only keeps cats hydrated but also builds a positive image of the business within the community.</p>
                     </div>
                      <div class="column">
-                        <h3> Food Shops Turning Waste into Care</h3>
-                        <p>Many food shops discard scraps of meat or fish at the end of the day, but these leftovers can be repurposed to feed hungry cats. By placing safe, fresh portions in small plates outside, businesses reduce waste and contribute directly to animal welfare. This simple routine supports local strays without creating additional cost or effort, turning waste into nourishmen</p>
+                        <h3>Turning Waste into Care</h3>
+                        <p>Food shops can give leftover meat or fish to cats instead of throwing it away. Fresh portions outside help reduce hunger and waste</p>
                     </div>
                      <div class="column">
-                        <h3>Small shaded shelters give stray cats a safe, cool place to rest away from danger.</h3>
-                        <p>Caring for cats isn’t just about food and water—it’s also about safety and comfort. Shops can place simple resting shelters, such as covered boxes, insulated crates, or shaded benches, near their storefronts. These spots protect cats from extreme heat, rain, and street hazards. Even a single shaded shelter can make a huge difference, offering cats a sense of stability and security in busy urban spaces.</p>
+                        <h3>Small shaded shelters</h3>
+                        <p>Shops can place shaded boxes or covered crates near their doors. These give cats safety from heat, rain, and street danger</p>
                     </div>
                 </div>
             </div>
@@ -152,16 +156,30 @@
             <img class="phone" src="phone-placeholder.png">
         </section>
         <footer>
-             <section class="contact">
+            <section class="contact">
+            <a href="home.html" class="logo">
+             <img src="logo2.jpg" class="logo-image "> 
+             <p class="logo-title">Pawareness</p>
+           </a>
+             
                 <h1>contact us</h1>
                 <a href="#">facebook</a><br>
                 <a href="#">instagram</a><br>
                 <a href="#">linkedin</a><br>
             </section>
             <section class="footer-pages">
-                 <a href="learn.html" class="nav-buttons" target="_blank">Learn</a>
+                <div class="footer-section">
+                 <a href="learn.html" class="nav-buttons" >Learn</a>
+                 <a href="learn.html" class="nav-buttons" >struggles</a>
+                 <a href="learn.html" class="nav-buttons" >nutrition</a>
+                 <a href="learn.html" class="nav-buttons" >health</a>
+                 </div>
+                 <div class="footer-section">
                  <a href="#" class="nav-buttons">Act</a>
-                 <a href="#" class="nav-buttons">Stories</a>
+                 <a href="#" class="nav-buttons">DIY cat care</a>
+                 <a href="act.html#ill" class="nav-buttons">special aids</a>
+                 <a href="#" class="nav-buttons">community involvement</a>
+                 </div>
                  <a href="#" class="nav-buttons">About Us</a>
             </section>
         </footer>
