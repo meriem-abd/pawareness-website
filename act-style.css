@@ -77,11 +77,15 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+  margin-left: 20px;
 }
 .footer-pages{
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+}
+footer a i{
+  margin: 2%;
 }
 .hero {
   display: flex;

@@ -11,6 +11,8 @@
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <body>
         <section class="navbar">
             <a href="home.html" class="logo">
@@ -31,7 +33,7 @@
             </div>
         </section>
         
-        <section class="DIY" >
+        <section class="DIY" id="id-diy">
             <div class="section-description">
                 <h1>do it yourself</h1>
                 <div>
@@ -40,7 +42,7 @@
                 </div>
             </div>
             <div class="article-grid">
-            <div class="article" id="diy">
+            <div class="article" id="id-diy-articles">
                 <img class="article-image" src="bowl1.webp">
                 <div class="article-description">
                     <h1>Water bowls</h1>
@@ -67,7 +69,7 @@
             </div>
         </section>
 
-        <section class="aids" id="ill">
+        <section class="aids" id="id-aids">
             <div class="section-description">
                 <h1>special aids</h1>
                 <div>
@@ -114,11 +116,11 @@
             </div>
         </section>
 
-        <section class="community" id="Community">
+        <section class="community" id="id-community">
             <div class="gallery-grid">
                 <div class="gallery-text">
                     <h1>community involvement</h1>
-                <p>Everyone in the community can and must help protect stray cats, every small action makes a difference</p>
+                <p>Talk to locals and community members to encourage them to help protect stray cats, every small action makes a difference.</p>
                 </div>
                 <img src="butcher.jpg" class="image1">
                 <img src="cleaner.jpg" class="image2">
@@ -155,33 +157,45 @@
             </div>
             <img class="phone" src="phone-placeholder.png">
         </section>
-        <footer>
-            <section class="contact">
-            <a href="home.html" class="logo">
-             <img src="logo2.jpg" class="logo-image "> 
+      <footer>
+          <section class="contact">
+             <a href="home.html" class="logo">
+             <img src="logo2.jpg" class="logo-image" alt="Pawareness Logo"> 
              <p class="logo-title">Pawareness</p>
-           </a>
-             
-                <h1>contact us</h1>
-                <a href="#">facebook</a><br>
-                <a href="#">instagram</a><br>
-                <a href="#">linkedin</a><br>
-            </section>
-            <section class="footer-pages">
-                <div class="footer-section">
-                 <a href="learn.html" class="nav-buttons" >Learn</a>
-                 <a href="learn.html" class="nav-buttons" >struggles</a>
-                 <a href="learn.html" class="nav-buttons" >nutrition</a>
-                 <a href="learn.html" class="nav-buttons" >health</a>
-                 </div>
-                 <div class="footer-section">
-                 <a href="#" class="nav-buttons">Act</a>
-                 <a href="#" class="nav-buttons">DIY cat care</a>
-                 <a href="act.html#ill" class="nav-buttons">special aids</a>
-                 <a href="#" class="nav-buttons">community involvement</a>
-                 </div>
-                 <a href="#" class="nav-buttons">About Us</a>
-            </section>
-        </footer>
+             </a>
+             <div class="footer-bottom">
+             <p>&copy; 2025 Pawareness. All rights reserved.</p>
+             </div>
+      
+             <a href="https://github.com/meriem-abd" target="_blank">
+                 <i class="fab fa-github fa-3x"></i>
+             </a>
+             <a href="https://www.linkedin.com/in/meriem-abdeladim-956432314/" target="_blank">
+                 <i class="fab fa-linkedin fa-3x"></i>
+             </a>
+           </section>
+
+           <section class="footer-pages">
+              <div class="footer-section">
+                <h3>Learn</h3>
+                <a href="learn.html#id-struggles" class="nav-buttons">Struggles</a>
+                <a href="learn.html#id-food" class="nav-buttons">Nutrition</a>
+                <a href="learn.html#id-health" class="nav-buttons">Health</a>
+              </div>
+
+             <div class="footer-section">
+                <h3>Act</h3>
+                <a href="act.html#id-diy" class="nav-buttons">DIY Cat Care</a>
+                <a href="act.html#id-aids" class="nav-buttons">Special Aids</a>
+                <a href="act.html#id-community" class="nav-buttons">Community Involvement</a>
+             </div>
+
+             <div class="footer-section">
+                 <h3>About</h3>
+                 <a href="about.html" class="nav-buttons">About Me</a>
+              </div>
+         </section>
+      </footer>
+
     </body>
 </html>

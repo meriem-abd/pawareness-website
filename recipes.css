@@ -68,6 +68,25 @@ footer {
   justify-content: space-between;
   margin-top: 10px;
 }
+.footer-logo{
+  width:20%;
+  height: auto;
+}
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+.footer-pages{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer a i{
+  margin: 2%;
+}
 .hero{
     display: flex;
     justify-content: center;
