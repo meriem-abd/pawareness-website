@@ -1,7 +1,7 @@
 // Smooth scroll for the "involved" button
 const involvedBtn = document.querySelector('.involved-button');
 const pagesSection = document.querySelector('.pages-section');
-if (involvedBtn && pagesSection) {
+if (involvedBtn && pagesSection) { //both elements exist
   involvedBtn.addEventListener('click', () => {
     pagesSection.scrollIntoView({ behavior: 'smooth' });
   });
@@ -87,3 +87,11 @@ window.addEventListener('scroll', () => {
   }
 });
 
+function textOver(index){
+  document.getElementsByClassName('over')[index].style.opacity='1';
+   document.getElementsByClassName('behind')[index].style.filter = 'brightness(30%)';
+}
+function textOut(index){
+  document.getElementsByClassName('over')[index].style.opacity= '0';
+   document.getElementsByClassName('behind')[index].style.filter = 'brightness(100%)';
+}
