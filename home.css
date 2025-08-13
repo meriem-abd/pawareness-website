@@ -13,7 +13,7 @@
       overflow-x: hidden;
       max-width: 100vw;
     }
-    h1, p, a, button {font-family: Arial, Helvetica, sans-serif;}
+    h1, p, a, button {font-family: 'Poppins', sans-serif;}
 
     /*  navbar   */
     .navbar {
@@ -24,7 +24,7 @@
       justify-content: space-between;
       align-items: center;
       margin: 0px;
-      padding: 5px;
+      padding: 1%;
       z-index: 1000;
     }
 
@@ -34,14 +34,14 @@
     }
 
     .logo-image {
-      width: 90px;
-      height: 50px;
+      width: 20%;
+      height: auto;
       border-radius: 100%;
       margin-right: 0px;
     }
 
     .logo-title {
-      margin: 7px;
+      margin: 2%;
       color: black;
       font-family: "Agbalumo";
       font-size: 20px;
@@ -66,10 +66,10 @@
       justify-self: center;
       background-color: rgb(174, 211, 237);
       width: 100%;
-      margin-bottom: 100px;
+      margin-bottom: 20%;
       border-bottom-left-radius: 100%;
       border-bottom-right-radius: 100%;
-      padding: 20px;
+      padding-bottom: 20%;
       margin-top: 0px;
       overflow: hidden;
     }
@@ -77,32 +77,37 @@
     .hero-content {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       margin: 0 auto;
       padding: 30px;
     }
 
     .hero-text {
-      width: 500px;
+      width: 50%;
       display: flex;
       flex-direction: column;
+     
     }
     
     .pre-description{
       color: rgb(252, 252, 251);
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
       margin: 0px;
       padding: 0px;
     }
 
     .hero-title {
-      font-size: 50px;
-      margin-top: 0px;
+       font-size: clamp(2rem, 6vw, 4rem);
+       margin: 0px;
     }
 
     .hero-description {
-      font-size: 20px;
+       font-size: clamp(0.9rem, 2.5vw, 1.2rem);
       margin: 0px;
       padding: 0px;
+    }
+    .hero-img{
+      max-width: 40%;
     }
     
     /* buttons  */
@@ -110,7 +115,7 @@
       align-self: flex-end;
       display: flex;
       gap: 10px;
-      
+      margin: 5%;
     }
     .btn{
       height: 30px;
@@ -229,65 +234,78 @@
    
     /*    why section   */
     .why-container {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 200px);
-      gap: 30px;
-      margin: 30px;
-    }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 30px;
+  margin: 30px;
+}
 
-    .why1 {
-      background-color: #262b46;
-      grid-column: 1/4;
-      grid-row: 1/3;
-      font-size: 20px;
-      color: aliceblue;
-      padding: 20px;
-      border-radius: 30px ;
-    }
-    .why1 h1{
-      font-size: 35px;
-    }
+.why1 {
+  background-color: #262b46;
+  grid-column: 1/4;
+  grid-row: 1/3;
+  font-size: clamp(0.8rem, 1.8vw, 1rem); /* smaller scaling */
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 30px;
+}
 
-    .why2 {
-      background-color: #d9e0f8;
-      grid-column: 4/6;
-      grid-row: 1/2;
-      border-radius: 30px;
-      display: flex;
-      padding: 2%;
-    }
+.why1 h1 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem); /* ~22–32px */
+}
 
-    .why3 {
-      background-color: #dc6e4a;
-      grid-column: 4/5;
-      grid-row: 2/3;
-      border-radius: 30px;
-    }
-    .why4 {
-      background-color: #ffeca0;
-      grid-column: 5/6;
-      grid-row: 2/3;
-      border-radius: 30px;
-    }
+.why2 {
+  background-color: #d9e0f8;
+  grid-column: 4/6;
+  grid-row: 1/2;
+  border-radius: 30px;
+  display: flex;
+  padding: 2%;
+}
 
-    .why-image {
-      width: 700px;
-    }
-    .why-image2{
-      width: 300px;
-    }
-    .why3 h1, .why4 h1{
-      font-size: 50px;
-      margin-bottom: 0px;
-    }
-    .why3, .why4{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      padding: 2%;
-      text-align: center;
-    }
+.why3 {
+  background-color: #dc6e4a;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  border-radius: 30px;
+}
+
+.why4 {
+  background-color: #ffeca0;
+  grid-column: 5/6;
+  grid-row: 2/3;
+  border-radius: 30px;
+}
+
+.why-image {
+  width: 100%;
+  max-width: 600px; /* reduced from 700px */
+  height: auto;
+}
+
+.why-image2 {
+  width: 100%;
+  max-width: 250px; /* reduced from 300px */
+  height: auto;
+}
+
+.why3 h1,
+.why4 h1 {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem); /* ~22–35px */
+  margin-bottom: 0px;
+}
+
+
+.why3,
+.why4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  text-align: center;
+}
+
     /*    footer   */
     footer {
   background-color: rgb(174, 211, 237);
@@ -315,4 +333,72 @@
 }
 footer a i{
   margin: 2%;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  /* General container padding */
+  body {
+    padding: 0 15px;
+  }
+
+  /* Titles */
+  h1 {
+    font-size: 1.8rem; /* smaller big title */
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* Subtitles / descriptions under title */
+  h2, .subtitle {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Small paragraphs */
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Flex or grid layouts stack vertically */
+  .flex, .grid {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  /* Buttons */
+  button, .btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+    width: 100%; /* full width button on mobile */
+  }
+
+  /* Sections */
+  section {
+    padding: 30px 0;
+  }
+
+  /* Navigation (if horizontal) becomes vertical */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Remove side margins from big containers */
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
 }
