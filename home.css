@@ -196,13 +196,13 @@
     }
 
     .pages-image {
-      width: 550px;
-      max-height: 400px;
+      width: 40%;
+      height: auto;
       border-radius: 20px;
     }
 
     .pages-text {
-      max-width: 500px;
+      width: 60%;
       margin: 20px;
       display: flex;
       flex-direction: column;
