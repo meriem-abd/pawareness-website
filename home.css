@@ -236,12 +236,12 @@
  .why-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(2, 250px);
   gap: 3%;
   margin: 3%;
   }
   .why-container h1{
-    font-size: clamp(1.3rem, 2.2vw, 2.2rem); 
+    font-size: clamp(2rem, 3vw, 2.9rem); 
   }
   .why-container p{
     font-size: clamp(0.8rem, 1.6vw, 1.1rem);
@@ -286,12 +286,6 @@
 .why-image2 {
   height: 100%;
   width: auto;
-}
-
-.why3 h1,
-.why4 h1 {
-  font-size: clamp(1.4rem, 2.5vw, 2.2rem); /* 22–35px */
-  margin-bottom: 0px;
 }
 
 
