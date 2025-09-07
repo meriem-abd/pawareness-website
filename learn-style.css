@@ -381,9 +381,9 @@ footer a i{
 }
 .ill-grid{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+
 }
 .ill-card{
   padding: 5px;
@@ -498,4 +498,12 @@ footer a i{
 .shown{
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+body {
+ padding: 0 1rem; /* 16px space left & right */
+}
+
+
 }

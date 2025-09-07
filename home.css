@@ -29,7 +29,7 @@ h1, p, a, button {
   background-color: rgb(174, 211, 237);
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0px;
   padding: 1%;
   z-index: 1000;
 }
@@ -117,25 +117,22 @@ h1, p, a, button {
 }
 
 /* buttons */
-.more-button {
-  align-self: flex-end;
-  display: flex;
-  gap: 0.6rem; /* 10px */
-  margin: 5%;
-}
-
-.btn {
-  height: 2rem; /* 30px */
-  background-color: black;
-  color: white;
-  border-radius: 1.25rem; /* 20px */
-  border-color: transparent;
-  font-size: 0.95rem; /* 15px */
-  text-decoration: none;
+/* 🔹 Base button style (applies to all buttons) */
+.more-button, .involved-button{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.4rem; /* 6px */
+  border-radius: 1.25rem; /* 20px */
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap; /* keeps text on one line */
+  background-color: black;
+  color: white;
 }
 
 .involved-button {
@@ -143,27 +140,26 @@ h1, p, a, button {
   color: black;
 }
 
-button {
-  height: 2rem;
-  background-color: black;
-  color: white;
-  border-radius: 1.25rem;
-  border-color: transparent;
-  font-size: 0.95rem;
+.side-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.6rem; 
+  margin: 5%;
+  padding: 0%;
 }
 
-.btn:hover, button:hover {
+.more-button:hover, .involved-button:hover{
   background-color: rgb(97, 118, 135);
-  height: 2.2rem; /* 35px */
-  cursor: pointer;
-  transition: 0.4s;
-  font-size: 1.1rem; /* 18px */
+  transform: scale(1.05); /* subtle grow instead of height jump */
 }
 
-button:active {
+.more-button:active, .involved-button:active{
   background-color: white;
   color: black;
 }
+
+
+
 
 /* main section */
 main {
@@ -344,7 +340,24 @@ footer a i {
 }
 
 /* MOBILE STYLES */
-@media (max-width: 48rem) { /* 768px */
+@media (max-width: 950px) { 
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img{
+    width: 100%;
+    height: auto;
+  }
+  .hero-text{
+    width: 100%;
+  }
+  button{
+    width: 30%;
+  }
+  
   .why-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 15rem); /* 200px */
@@ -360,6 +373,14 @@ footer a i {
     grid-area: 4/2/5/3;
   }
   
+  .page{
+    display: flex;
+    flex-direction: column;
+  }
+  .pages-image{
+    width: 100%;
+    height: auto;
+  }
   body {
     padding: 0 1rem; /* 15px */
   }
@@ -389,11 +410,6 @@ footer a i {
     margin: 0 auto;
   }
 
-  .flex, .grid {
-    flex-direction: column !important;
-    grid-template-columns: 1fr !important;
-    gap: 1.25rem; /* 20px */
-  }
 
   button, .btn {
     font-size: 1rem;
@@ -401,14 +417,7 @@ footer a i {
     width: 100%; 
   }
 
-  section {
-    padding: 2rem 0; /* 30px */
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.6rem; /* 10px */
-  }
+  
 
   .container {
     max-width: 100%;
