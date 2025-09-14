@@ -367,6 +367,23 @@ footer a i {
     height: auto;
   }
   
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nav-buttons {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 80px;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .logo-image {
+    width: 100px;
+  }
   
   body {
     padding: 0 1rem; /* 15px */
