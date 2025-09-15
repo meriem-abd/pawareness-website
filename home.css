@@ -341,10 +341,13 @@ footer a i {
     align-items: center;
     justify-content: center;
   }
-  .hero-img{
-    width: 100%;
-    height: auto;
-  }
+  .hero-img {
+  width: 65vw; 
+  max-width: 100%; 
+  height: auto;
+  display: block; 
+}
+
   .hero-text{width: 100%;}
 
   button{ width: 30%;}
