@@ -18,7 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .navbar {
   position: sticky;
   z-index: 9999;
@@ -27,8 +26,8 @@ body {
   background-color: rgb(174, 211, 237);
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
-  padding: 5px;
+  margin: 0;
+  padding: 0.3rem;
 }
 
 .logo {
@@ -37,25 +36,25 @@ body {
 }
 
 .logo-image {
-  width: 90px;
-  height: 50px;
-  border-radius: 100%;
-  margin-right: 0px;
+  width: 20%;
+  height: auto;
+  border-radius: 30px ;
+  margin-right: 0;
 }
 
 .logo-title {
-  margin: 7px;
+  margin: 0.5rem;
   color: black;
   font-family: "Agbalumo";
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .nav-buttons {
   font-family: Arial, sans-serif;
-  padding: 10px;
+  padding: 0.6rem;
   border-radius: 5px;
   color: black;
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   text-decoration: none;
 }
 
@@ -65,11 +64,11 @@ body {
 
 footer {
   background-color: rgb(174, 211, 237);
-  padding: 20px;
+  padding: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 0.6rem;
 }
 .footer-logo{
   width:20%;
@@ -80,7 +79,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 .footer-pages{
   display: flex;
@@ -92,9 +91,9 @@ footer a i{
 }
 .hero {
   display: flex;
-  padding: 30px;
-  padding-bottom: 200px;
-  margin-bottom: 100px;
+  padding: 2rem;
+  padding-bottom: 12rem;
+  margin-bottom: 6rem;
   align-items: center;
   justify-content: center;
   border-bottom-left-radius: 100%;
@@ -103,10 +102,10 @@ footer a i{
 }
 
 .hero-image {
-  width: 550px;
+  width: 50%;
   height: auto;
   border-radius: 100%;
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .hero-text {
@@ -115,45 +114,48 @@ footer a i{
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
-  margin-left: 0px;
+  width: 50%;
+  padding: 0.6rem;
+  margin-left: 0;
 }
 
 .hero-text p {
-  font-size: 25px;
+  font-size: clamp(1rem, 2vw, 1.6rem);
   width: 600px;
+  width: 90%;
 }
 
 .hero-text h1 {
-  font-size: 70px;
-  margin-bottom: 0px;
+  font-size: clamp(2rem, 5vw, 4.3rem);
+  margin-bottom: 0;
 }
 
 .section-description{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 2%;
 }
 
 .section-description h1{
-  font-size: 80px;
+  font-size: clamp(2rem, 5vw, 5rem);
   text-align: center;
-  width: 470px;
+  width: 30%;
   background-color: aliceblue;
   border-radius: 100%;
 }
 .section-description p{
-  font-size: 25px;
+  font-size: clamp(1rem, 2vw, 1.6rem);
   text-align: center;
-  width: 500px;
 }
-
+.section-description-text{
+  width: 40%;
+}
 .article-grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 20px;
-  padding: 100px;
+  gap: 1.2rem;
+  padding: 2%;
 }
 .article{
   display: flex;
@@ -162,7 +164,7 @@ footer a i{
   align-items: center;
   background-color: rgba(219, 211, 211, 0.689);
   border-radius: 30px;
-  padding: 10px;
+  padding: 0.6rem;
 }
 .article-image{
   width: 100%;
@@ -170,25 +172,25 @@ footer a i{
   border-radius: 30px;
 }
 .more-button{
-  height: 30px;
+  height: 2rem;
   background-color: black;
   color: white;
   border-radius: 20px;
   border-color: transparent;
-  font-size: 15px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   align-self: flex-end;
   align-items: center;
   display: flex;
-  gap: 10px;
-  padding: 10px;
+  gap: 0.6rem;
+  padding: 0.6rem;
   text-decoration: none;
 }
 .more-button:hover {
   background-color: rgb(97, 118, 135);
-  height: 35px;
+  height: 2.2rem;
   cursor: pointer;
   transition: 0.4s;
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 .DIY{
@@ -197,35 +199,35 @@ footer a i{
 
 .community{
   background-color: rgb(254, 255, 199);
-  padding-top: 200px;
+  padding-top: 12rem;
 }
 .guide{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.2rem;
   border-radius: 40px;
-  margin: 50px;
+  margin: 3rem;
   background-color: rgb(76, 83, 111);
-  padding: 40px;
-  padding-bottom: 0px;
+  padding: 2.5rem;
+  padding-bottom: 0;
 }
 .side-text{
   color: rgb(254, 252, 252);
   width: 700px;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 .side-text h1{
-  font-size: 50px;
-  margin-bottom: 0px;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  margin-bottom: 0;
   text-align: left;
 }
 .side-text p{
- font-size: 25px;
+ font-size: clamp(1rem, 2vw, 1.6rem);
  text-align: center;
 }
 .download{
-  font-size: 30px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   width: 700px;
   color: rgb(8, 0, 0);
   background-color: rgb(179, 226, 245);
@@ -242,18 +244,20 @@ footer a i{
 }
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(13, 1fr);   /* Flexible 12 columns */
-  grid-template-rows: repeat(10, 80px);      /* Flexible 9 rows */
-  gap: 10px;
-  padding: 20px;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(10, 80px);
+  gap: 0.6rem;
+  padding: 1.2rem;
 }
 
 .gallery-text {
-  grid-area: 4 / 5 / 8 / 10;  /* Center block: rows 4–6, cols 5–8 */
-  padding: 20px;
+  grid-area: 4 / 5 / 8 / 10;
+  padding: 1.2rem;
   text-align: center;
   border-radius: 12px;
   z-index: 2;
+  margin: 0px;
+  padding: 0px;
 }
 
 .behind {
@@ -271,7 +275,7 @@ footer a i{
    pointer-events: none;
    color: white;
    text-align: center;
-   font-size: 20px;
+   font-size: clamp(1rem, 2vw, 1.3rem);
 }
 .image1, .text1 {grid-area: 2/ 2 / 4 / 5;}
 .image2, .text2 { grid-area: 2 / 10 / 5 / 13; }
@@ -299,7 +303,6 @@ footer a i{
   align-items: center;
   justify-content: flex-start;
   text-align: center;
- 
 }
 .big-pic{
   width: 100%;
@@ -310,11 +313,11 @@ footer a i{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  margin-top: 100px;
+  padding: 1.2rem;
+  margin-top: 6rem;
 }
 
- .left{
+.left{
   opacity: 0;
  transform: translateX(-100px);
  transition: all 0.8s ease;
@@ -329,11 +332,11 @@ footer a i{
   transform: translateX(0);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
    .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 0.6rem;
   }
 
   .nav-buttons {
@@ -349,29 +352,27 @@ footer a i{
   }
   
   body {
-    padding: 0 1rem; /* 15px */
+    padding: 0 1rem;
   }
 
   h1 {
-    font-size: 1.8rem; 
+    font-size: clamp(1.4rem, 4vw, 1.8rem); 
     line-height: 1.2;
   }
 
   h2, .subtitle {
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
     line-height: 1.3;
-    
   }
 
   p {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     line-height: 1.5;
   }
 
-
   button, .btn {
     font-size: 1rem;
-    padding: 0.6rem 1rem; /* 10px 16px */
+    padding: 0.6rem 1rem;
     width: 100%; 
   }
 
@@ -409,23 +410,27 @@ footer a i{
      border-bottom-right-radius: 50%;
   }
   .hero-image {
-  width: 70vw; 
-  max-width: 100%; 
-  height: auto;
-  display: block; 
- 
-}
-  .hero-text, .hero-text p{width: 90%;}
+    width: 70vw; 
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+  }
+  .hero-text, .hero-text p{width: 100%;}
    
- 
   .section-description{
-    gap: 0px;
+    gap: 0;
   }
   .section-description p{
-    margin: 0px;
+    margin: 0;
+  }
+  .section-description-text{
+    width: 90%;
+  }
+  .section-description h1{
+    width: 70%;
   }
 
-   .article-grid, .section-description{
+  .article-grid, .section-description{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,5 +439,9 @@ footer a i{
   .article{
     width:70vw;
   }
-
+  .columns{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
