@@ -368,8 +368,6 @@ footer a i{
     line-height: 1.5;
   }
 
-  
-
 
   button, .btn {
     font-size: 1rem;
@@ -402,4 +400,14 @@ footer a i{
     padding: 0;
   }
 
+  .article-grid, .section-description{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-description{
+    gap: 0px;
+  }
+  .section-description p{
+    margin: 0px;
+  }
 }
