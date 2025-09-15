@@ -400,14 +400,39 @@ footer a i{
     padding: 0;
   }
 
-  .article-grid, .section-description{
+  .hero{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     border-bottom-left-radius: 50%;
+     border-bottom-right-radius: 50%;
   }
+  .hero-image {
+  width: 70vw; 
+  max-width: 100%; 
+  height: auto;
+  display: block; 
+ 
+}
+  .hero-text, .hero-text p{width: 90%;}
+   
+ 
   .section-description{
     gap: 0px;
   }
   .section-description p{
     margin: 0px;
   }
+
+   .article-grid, .section-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .article{
+    width:70vw;
+  }
+
 }
