@@ -416,6 +416,7 @@ footer a i {
 
   footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -427,8 +428,10 @@ footer a i {
   }
   .contact-links{
     display: flex;
-    flex-direction: column;
-    gap: 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
   }
 
   .container {
