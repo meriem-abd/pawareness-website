@@ -4,7 +4,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  
 }
 .wrapper{
   overflow-x: hidden;
@@ -22,16 +21,17 @@ body {
 .header{
   overflow: visible;
 }
+
 .navbar {
   position: sticky;
-  z-index: 1000;
+  z-index: 9999;
   top: 0;
   display: flex;
   background-color: rgb(174, 211, 237);
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
-  padding: 5px;
+  margin: 0;
+  padding: 0.3rem;
 }
 
 .logo {
@@ -40,25 +40,25 @@ body {
 }
 
 .logo-image {
-  width: 90px;
-  height: 50px;
-  border-radius: 100%;
-  margin-right: 0px;
+  width: 20%;
+  height: auto;
+  border-radius: 15%;
+  margin-right: 0;
 }
 
 .logo-title {
-  margin: 7px;
+  margin: 0.5rem;
   color: black;
   font-family: "Agbalumo";
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .nav-buttons {
   font-family: Arial, sans-serif;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
   color: black;
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   text-decoration: none;
 }
 
@@ -68,11 +68,11 @@ body {
 
 footer {
   background-color: rgb(174, 211, 237);
-  padding: 20px;
+  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 2%;
 }
 .footer-logo{
   width:20%;
@@ -83,7 +83,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 .footer-pages{
   display: flex;
@@ -96,21 +96,20 @@ footer a i{
 
 .hero {
   display: flex;
-  padding: 30px;
-  padding-bottom: 200px;
-  margin-bottom: 100px;
-  gap: 10px;
+  padding: 4%;
+  padding-bottom: 15vh;
+  margin-bottom: 10vh;
+  gap: 2%;
   align-items: center;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: rgb(174, 211, 237);
 }
 
 .hero-image {
   width: 50%;
   height: auto;
-  border-radius: 40px;
-  
+  border-radius: 5%;
 }
 
 .hero-text {
@@ -119,18 +118,18 @@ footer a i{
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
+  padding: 2%;
   max-width: 50%;
 }
 
 .hero-text p {
-  font-size: 25px;
-  width: 600px;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  width: 80%;
 }
 
 .hero-text h1 {
-  font-size: 70px;
-  margin-bottom: 0px;
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin-bottom: 0;
 }
 
 .question-container {
@@ -138,13 +137,12 @@ footer a i{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 10vh;
 }
 
 .question {
-  font-size: 80px;
-  margin: 0px;
-  
+  font-size: clamp(2rem, 8vw, 5rem);
+  margin: 0;
 }
 
 /* stray cards */
@@ -153,25 +151,24 @@ footer a i{
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  padding: 50px;
-  margin: 0px;
-  height: 500px;
-  margin-bottom: 300px;
+  padding: 5%;
+  margin: 0;
+  height: auto;
+  margin-bottom: 20vh;
 }
 
 .stray-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  
 }
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 350px;
+  width: clamp(200px, 25vw, 300px);
+  height: clamp(250px, 40vh, 350px);
   perspective: 1000px;
-  margin: 20px;
+  margin: 2%;
 }
 
 .stray-card {
@@ -190,14 +187,12 @@ footer a i{
 .stray-card-front, .stray-card-back {
   position: absolute;
   width: 100%;
-  height: 270px;
+  height: 100%;
   backface-visibility: hidden;
-  border-radius: 30px;
-  padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 10px;
-  height: 350px;
-  width: auto;
+  border-radius: 8%;
+  padding: 2%;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  font-size: clamp(0.6rem, 1vw, 1rem);
 }
 
 .stray-card-front {
@@ -206,12 +201,11 @@ footer a i{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  
 }
 
 .stray-card-front h1 {
-  font-size: 40px;
-  margin: 0px;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  margin: 0;
 }
 
 .stray-card-back {
@@ -220,21 +214,21 @@ footer a i{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 
 .stray-image {
-  width: 300px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 10%;
+  margin-bottom: 2%;
 }
 .stray-card.flip {
   transform: rotateY(180deg);
 }
 
 .struggles-container{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 .struggles-grid {
   display: flex;
@@ -246,35 +240,35 @@ footer a i{
 .struggles-image {
   width: 45%;
   height: auto;
-  border-radius: 12px;
-  object-fit: cover;}
+  border-radius: 3%;
+  object-fit: cover;
+}
 
 .struggles-card {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-   display: flex;
+  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.05);
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  border-radius: 30px;
-  padding: 20px;
+  gap: 2%;
+  border-radius: 5%;
+  padding: 3%;
   transition: 0.4s;
-  width: 1200px;
+  width: 90%;
   margin: 3%;
   background-color:rgb(250, 247, 207) ;
 }
 
 .struggles-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-0.5vw);
 }
 .struggles-text{
   width: 50%;
 }
 .struggles-text h1{
-  font-size: 35px;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
 }
 .struggles-text p{
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .behavior-card {
@@ -282,17 +276,16 @@ footer a i{
 }
 .matter-container{
     background-color: rgb(250, 247, 207);
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding: 10vh 0;
 }
 .matter-grid{
-    padding: 20px; 
+    padding: 2%; 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,260px);
-    gap: 30px;
-    margin: 20px;
-    margin-bottom: 100px;
+    grid-template-rows: repeat(2,minmax(15vh, auto));
+    gap: 3%;
+    margin: 2%;
+    margin-bottom: 10vh;
 }
 .matter-text{
   grid-area: 1/1/3/3;
@@ -301,132 +294,125 @@ footer a i{
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  font-size: 30px;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 .matter-card{
  background-color: rgba(222, 219, 176, 0.539);
- padding: 1%;
+ padding: 3%;
  transition: 0.5s;
 }
 .matter-card:hover{
  background-color: rgba(225, 223, 189, 0.421) ;
- transform: scale(1.1);
+ transform: scale(1.05);
 }
 .matter-image{
-  width: 90px;
+  width: 20%;
 }
 .fact-container{
   display: flex;
-  padding: 20px;
-  font-size: 30px;
-  margin: 20px;
-  border-radius: 20px;
-  border: 3px solid black;
-  gap: 10px;
-  box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2%;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  margin: 2%;
+  border-radius: 5%;
+  border: 0.3vw solid black;
+  gap: 2%;
+  box-shadow: 0.5vw 1vw 2vw rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
 }
 .fact-image{
-  border-radius: 20px;
+  border-radius: 10%;
 }
 .food-container{
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 8%;
+}
+.safe-card, .unsafe-card{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.05);
+  width: 45%;
 }
 .safe-card{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(203, 241, 203, 0.72);
-  padding: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  width: 45%;
 }
 .unsafe-card{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(247, 204, 204, 0.693);
-  padding: 20px;
-  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.05);
-  width: 45%;
 }
 .food-item{
   display: flex;
-  font-size: 30px;
-  margin: 20px;
-  gap: 10px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  margin: 2%;
+  gap: 2%;
 }
 .food-image{
-  max-width: 70px;
+  max-width: 15%;
   height: auto;
   object-fit: contain;
 }
 .food-title{
   display:flex;
-  font-size: 40px;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 .food-icon{
-  max-width:100px;
+  max-width:20%;
   height: auto;
   object-fit: contain;
 }
 .ill-container{
   background-color: rgb(250, 247, 207);
-  margin-top: 200px;
-  padding-bottom: 100px;
+  margin-top: 15vh;
+  padding-bottom: 10vh;
 }
 .ill-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px;
-
+  gap: 2%;
 }
+
 .ill-card{
-  padding: 5px;
-  perspective: 1000px; /* 3d effect*/
+  padding: 1%;
+  perspective: 1000px; 
   width: 100%;
-  height: 460px;
+  height: clamp(300px, 50vh, 460px);
 }
 .ill-card-inner{
-  position: relative; /*refrence box for absolute-position front/back cards */
-  transform-style: preserve-3d; /*for 3d flipping*/
+  position: relative; 
+  transform-style: preserve-3d; 
   transition: transform 0.8s;
   width: 100%;
   height: 100%;
   background-color: aliceblue;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
 }
-
 
 .ill-card-front img{
   width: 100%;
   height: auto;
-  
 }
 .ill-card p,h2{
-  margin: 0px;
+  margin: 0;
   text-align: center;
 }
 .ill-card-front h2{
-  margin-top: 10px;
-  font-size: 25px;
+  margin-top: 2%;
+  font-size: clamp(1rem, 2vw, 1.6rem);
 }
 .ill-card-front, .ill-card-back{
-  position: absolute; /*on top of each others*/
+  position: absolute; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  backface-visibility: hidden; /*hides back when front is visible*/
+  backface-visibility: hidden;
   background-color: aliceblue;
 }
 .ill-card-back{
-  transform: rotateY(180deg); /* so the pic isn't mirrored*/
+  transform: rotateY(180deg); 
 }
 .ill-card-front{
   text-align: center;
@@ -441,58 +427,57 @@ footer a i{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 5%;
+  margin-bottom: 5%;
 }
 .ill-tips{
- padding: 20px;
- border-radius: 30px;
+ padding: 2%;
+ border-radius: 5%;
 }
 
 .tip{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
-  font-size: 20px;
+  gap: 3%;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
   background-color: #efedee;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 20px;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 5%;
 }
 .intro-text{
-  border-radius: 20px;
-  width: 700px;
-  font-size: 30px;
-  margin: 20px;
+  border-radius: 5%;
+  width: 80%;
+  font-size: clamp(1rem, 3vw, 2rem);
+  margin: 2%;
   text-align: center;
 }
- .treat-button{
+.treat-button{
   background-color: black ;
   color: white;
   text-decoration: none;
   border-radius: 30px;
-  padding: 1%;
+  padding: 2%;
   transition: 0.5s;
- }
- .treat-button:hover{
+}
+.treat-button:hover{
   background-color:bisque;
   color: black;
   transform: scale(1.05);
- }
- .button-container{
+}
+.button-container{
   display: flex;
   justify-content: flex-end;
- }
- /*animation*/
- .left{
+}
+.left{
   opacity: 0;
- transform: translateX(-100px);
+ transform: translateX(-10%);
  transition: all 0.8s ease;
 }
 .right{
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(10%);
   transition: all 0.8s ease;
 }
 .shown{
@@ -500,10 +485,89 @@ footer a i{
   transform: translateX(0);
 }
 
-@media (max-width: 768px) {
-body {
- padding: 0 1rem; /* 16px space left & right */
-}
+@media (max-width: 700px) {
+   .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.6rem;
+  }
 
+  .nav-buttons {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 80px;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
 
+  .logo-image {
+    width: 100px;
+  }
+  
+  body {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.4rem, 4vw, 1.8rem); 
+    line-height: 1.2;
+  }
+
+  h2, .subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.5;
+  }
+
+  button, .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%; 
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap: 2%;
+  }
+  .contact-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     border-bottom-left-radius: 50%;
+     border-bottom-right-radius: 50%;
+  }
+  .hero-image {
+    width: 90vw; 
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+  }
+  .hero-text, .hero-text p, .hero-text h1{width: 80vw;}
+   
 }
