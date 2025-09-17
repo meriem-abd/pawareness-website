@@ -218,9 +218,14 @@ footer a i{
 }
 
 .stray-image {
-  width: 90%;
+  width: 98%;
   border-radius: 10%;
   margin-bottom: 2%;
+}
+.stray-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .stray-card.flip {
   transform: rotateY(180deg);
@@ -274,21 +279,20 @@ footer a i{
 .behavior-card {
   background-color: rgb(187, 232, 187);
 }
-.matter-container{
+.matter-background{
     background-color: rgb(250, 247, 207);
     padding: 10vh 0;
 }
 .matter-grid{
     padding: 2%; 
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,minmax(15vh, auto));
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,minmax(20vh, auto));
     gap: 3%;
     margin: 2%;
     margin-bottom: 10vh;
 }
 .matter-text{
-  grid-area: 1/1/3/3;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -300,13 +304,29 @@ footer a i{
  background-color: rgba(222, 219, 176, 0.539);
  padding: 3%;
  transition: 0.5s;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ padding: 5%;
 }
 .matter-card:hover{
  background-color: rgba(225, 223, 189, 0.421) ;
  transform: scale(1.05);
 }
 .matter-image{
-  width: 20%;
+  width: 30%;
+}
+.matter-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.matter-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .fact-container{
   display: flex;
@@ -369,7 +389,8 @@ footer a i{
 }
 .ill-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  grid-template-columns: repeat(4, 1fr); 
+  
   gap: 2%;
 }
 
@@ -377,7 +398,8 @@ footer a i{
   padding: 1%;
   perspective: 1000px; 
   width: 100%;
-  height: clamp(300px, 50vh, 460px);
+  height: clamp(450px, 70vh, 600px);
+  margin-bottom: 50px;
 }
 .ill-card-inner{
   position: relative; 
@@ -580,5 +602,37 @@ footer a i{
   .flip-card{
     width: 60vw;
     height: 55vw;
+  }
+
+  .matter-container{
+    flex-direction: column;
+  }
+   
+  .fact-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .fact-image{
+    width: 90%;
+  }
+  
+  .food-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .safe-card, .unsafe-card{
+    width: 90%;
+  }
+  .ill-introduction{
+    display: flex;
+    flex-direction: column;
+  }
+  .ill-grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 150px;
   }
 }
