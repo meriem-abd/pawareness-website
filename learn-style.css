@@ -386,28 +386,43 @@ footer a i{
   background-color: rgb(250, 247, 207);
   margin-top: 15vh;
   padding-bottom: 10vh;
+  padding-top: 10vh;
 }
 .ill-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2%;
+  
 }
 
-.ill-card{
+.ill-card {
   padding: 1%;
   perspective: 1000px; 
   width: 100%;
-  height: clamp(450px, 70vh, 600px);
+  min-height: 350px; 
+  height: auto;      
   margin-bottom: 50px;
+  
 }
-.ill-card-inner{
+
+.ill-card-inner {
   position: relative; 
   transform-style: preserve-3d; 
   transition: transform 0.8s;
   width: 100%;
   height: 100%;
+}
+
+.ill-card-front, .ill-card-back {
+  position: absolute; 
+  inset: 0;           /* shorthand for top/right/bottom/left: 0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  backface-visibility: hidden;
   background-color: aliceblue;
-  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 .ill-card-front img{
@@ -422,18 +437,11 @@ footer a i{
   margin-top: 2%;
   font-size: clamp(1rem, 2vw, 1.6rem);
 }
-.ill-card-front, .ill-card-back{
-  position: absolute; 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  backface-visibility: hidden;
-  background-color: aliceblue;
-}
+
 .ill-card-back{
   transform: rotateY(180deg); 
+    overflow-y: auto;
+  padding: 1rem;
 }
 .ill-card-front{
   text-align: center;
@@ -462,7 +470,8 @@ footer a i{
   justify-content: flex-start;
   gap: 3%;
   font-size: clamp(0.9rem, 2vw, 1.3rem);
-  background-color: #efedee;
+  background-color: rgb(240, 248, 255);
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
   margin: 2%;
   padding: 2%;
   border-radius: 5%;
@@ -606,6 +615,16 @@ footer a i{
   .matter-container{
     flex-direction: column;
   }
+  .struggles-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .struggles-image{
+    width: 90%;
+  }
+  .struggles-text{
+    width: 95%;
+  }
    
   .fact-container{
     flex-direction: column;
@@ -633,6 +652,14 @@ footer a i{
   .ill-introduction{
     display: flex;
     flex-direction: column;
+  }
+  .ill-card{
+    max-width: 80vw;
+    
+  }
+  .ill-grid{
+    justify-items: center;
+    padding-bottom: 500px;
   }
   
 }

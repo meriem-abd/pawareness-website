@@ -95,3 +95,18 @@ function textOut(index){
   document.getElementsByClassName('over')[index].style.opacity= '0';
    document.getElementsByClassName('behind')[index].style.filter = 'brightness(100%)';
 }
+
+const titles = document.querySelectorAll(".column_title");
+
+titles.forEach(title => {
+  title.addEventListener("click", () => {
+    const explanation = title.nextElementSibling;
+
+    // toggle open/close
+    if (explanation.style.maxHeight) {
+      explanation.style.maxHeight = null; // collapse
+    } else {
+      explanation.style.maxHeight = explanation.scrollHeight + "px"; // expand
+    }
+  });
+});

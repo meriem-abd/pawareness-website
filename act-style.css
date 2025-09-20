@@ -454,6 +454,17 @@ footer a i{
     display: flex;
     flex-direction: column;
   }
+  .column_title{
+    background-color: rgb(174, 211, 237);
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .explanation{
+    max-height: 0;       /* start collapsed */
+    overflow: hidden;    /* hide text */
+    transition: max-height 0.4s ease; /* smooth opening */
+    background: #f9f9f9;
+  }
   .community{
     padding-top: 2px ;
   }
