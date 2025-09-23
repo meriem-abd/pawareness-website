@@ -289,7 +289,7 @@ footer a i{
     grid-row: 1 / 2;
     margin: 0;
     align-self: center;
-    font-size: clamp(1.1rem, 5vw, 1.8rem);
+    font-size: clamp(1.5rem, 6vw, 2rem);
     line-height: 1.12;
   }
 
@@ -297,7 +297,7 @@ footer a i{
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     margin-top: 0.6rem;
-    font-size: clamp(0.95rem, 3.8vw, 1.1rem);
+    font-size: clamp(0.8rem, 3.4vw, 1.2rem);
     text-align: center;
   }
 
