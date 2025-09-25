@@ -158,7 +158,7 @@ footer a i{
   }
   @keyframes scroll {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); }
   }
 
 .about-me{
@@ -166,10 +166,13 @@ footer a i{
   padding-top: 100px;
   margin-top: 0px;
 }
-.job-btn{
+.job-title{
+  display: inline-block;
+  margin: 0;
+  padding: 0 2rem;
+  font-size: 1.2rem;
   border-radius: 30px;
-  background-color: rgb(240, 248, 255);
-  border-color: rgb(240, 248, 255);
+  background-color: rgb(243, 236, 181);
   font-size: medium;
   text-align: center;
   padding: 1%;
@@ -306,9 +309,5 @@ footer a i{
    .img-wrapper img{
     width: 100%;
   }
-  .job{
-    
-    gap: 20px;
-  }
-
+  
 }
