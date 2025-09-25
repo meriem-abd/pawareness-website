@@ -114,15 +114,15 @@ footer a i{
 
 .img-wrapper {
   position: relative;
-  width: 300px; /* adjust as needed */
+  width: 300px; 
 }
 
 .img-background {
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   width: 300px;
-  height: 350px;
+  height: 320px;
   background-color: rgb(243, 236, 181);
   border-radius: 20px;
   transform: translate(-50%, -50%);
@@ -145,50 +145,16 @@ footer a i{
   font-size: 22px;
   margin-top: 0px;
 }
-.marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-  }
-  .marquee span {
-    display: inline-block;
-    padding-left: 100%;   /* start off-screen */
-    animation: scroll 25s linear infinite;
-  }
-  @keyframes scroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
 
-.about-me{
-  background-color: rgb(243, 236, 181);
-  padding-top: 100px;
-  margin-top: 0px;
-}
-.job-title{
-  display: inline-block;
-  margin: 0;
-  padding: 0px;
-  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-  border-radius: 30px;
-  background-color: rgb(243, 236, 181);
-  text-align: center;
-  padding: 1%;
-}
-.job{
-  display: flex;
-  gap: 3%;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-}
+
+
  .rotator {
     position: relative;
     width: 100%;
     height: 2.5em; /* space for one line */
     overflow: hidden;
     height: 5em;
+    margin-bottom: 0px;
   }
 
   .rotator h2 {
@@ -215,6 +181,11 @@ footer a i{
     100% { opacity: 0; }
   }
 
+  .about-me{
+  background-color: rgb(243, 236, 181);
+  padding-top: 50px;
+  margin-top: 0px;
+}
 .philo{
   display: flex;
   justify-content: center;
@@ -230,7 +201,7 @@ footer a i{
   grid-template-rows: repeat(18, 40px);     /* doubled rows */
   gap: 10px;
   padding: 20px;
-  padding-top: 200px;
+  padding-top: 50px;
 }
 
 .gallery-text {
@@ -335,9 +306,30 @@ footer a i{
   .img-background{
     height: 100%;
     width: 100%;
+    top: 100%;
   }
    .img-wrapper img{
     width: 100%;
   }
+  .about-me{
+    padding-top: 0px;
+  }
+  .gallery-grid{
+    gap: 10px;
+    grid-template-rows: repeat(13, 80px);
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+.image1, .text1 { grid-area: 4 / 7 / 6 / 14; }
+.image2, .text2 { grid-area: 6 / 7 / 9 / 14; }
+.image3, .text3 { grid-area: 8 / 1 / 10 / 7; }
+.image4, .text4 { grid-area: 9 / 8 / 12 / 14; }
+.image5, .text5 { grid-area: 12 / 3 / 14 / 12; }
+.image7, .text7 { grid-area: 10 / 1 / 12 / 8; }
+.image6, .text6 { grid-area: 5 / 1 / 8 / 7; }
+.gallery-text {
+  grid-area: 1/1/4/14;
+  width: 100%;
+}
   
 }
