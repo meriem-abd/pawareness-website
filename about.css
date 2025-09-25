@@ -143,6 +143,21 @@ footer a i{
   font-size: 22px;
   margin-top: 0px;
 }
+.job-btn{
+  border-radius: 30px;
+  background-color: rgb(243, 236, 181);
+  border-color: rgb(243, 236, 181);
+  font-size: medium;
+  text-align: center;
+  padding: 1%;
+}
+.job{
+  display: flex;
+  gap: 3%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
 
 .philo{
   display: flex;
@@ -159,12 +174,13 @@ footer a i{
   grid-template-rows: repeat(18, 40px);     /* doubled rows */
   gap: 10px;
   padding: 20px;
+  padding-top: 200px;
 }
 
 .gallery-text {
   grid-area: 4 / 8 / 14 / 20; /* bigger area for text */
   padding: 20px;
-  text-align: center;
+   text-align: justify;
   border-radius: 12px;
   z-index: 2;
   font-size: 25px; /* bigger font */
