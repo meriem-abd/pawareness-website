@@ -341,13 +341,13 @@ footer a i{
     grid-template-columns: repeat(13, 1fr);
   }
 
-.image1 { grid-area: 4 / 7 / 6 / 14; }
-.image2 { grid-area: 6 / 7 / 9 / 14; }
+.image1 { grid-area: 5 / 7 / 7 / 14; }
+.image2 { grid-area: 7 / 7 / 9 / 14; }
 .image7{ grid-area: 8 / 1 / 10 / 7; }
 .image4{ grid-area: 9 / 8 / 12 / 14; }
 .image5{ grid-area: 12 / 1 / 14 / 7; }
 .image3{ grid-area: 10 / 1 / 12 / 8; }
-.image6 { grid-area: 5 / 1 / 8 / 7; }
+.image6 { grid-area: 6 / 1 / 8 / 7; }
 .image8 {grid-area: 12 / 7 / 14 / 14;}
 .gallery-text {
   grid-area: 1/1/4/14;
