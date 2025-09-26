@@ -1,6 +1,6 @@
 // Smooth scroll for the "involved" button
 const involvedBtn = document.querySelector('.involved-button');
-const pagesSection = document.querySelector('.pages-section');
+const pagesSection = document.querySelector('.volunt');
 if (involvedBtn && pagesSection) { //both elements exist
   involvedBtn.addEventListener('click', () => {
     pagesSection.scrollIntoView({ behavior: 'smooth' });

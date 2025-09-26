@@ -206,41 +206,47 @@ footer a i{
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
-  border-radius: 40px;
-  margin: 3rem;
+  border-radius: 30px;
+  margin: 2%;
   background-color: rgb(76, 83, 111);
-  padding: 2.5rem;
-  padding-bottom: 0;
+  padding: 3%;
 }
 .side-text{
   color: rgb(254, 252, 252);
-  width: 700px;
+  width: 60%;
   margin-bottom: 2rem;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 .side-text h1{
-  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   margin-bottom: 0;
   text-align: left;
 }
 .side-text p{
  font-size: clamp(1rem, 2vw, 1.6rem);
  text-align: center;
+ 
 }
 .download{
   font-size: clamp(1.2rem, 3vw, 2rem);
-  width: 700px;
+  text-decoration: none;
   color: rgb(8, 0, 0);
   background-color: rgb(179, 226, 245);
   border-color: rgb(179, 226, 245);
   border-radius: 40px;
   transition: 0.3s;
+  align-self: flex-end;
 }
 .download:hover{
   background-color: rgb(247, 245, 241);
 }
 .phone{
-  width: 400px;
+  width: 40%;
   height: auto;
+  border-radius: 30px;
 }
 .gallery-grid {
   display: grid;
