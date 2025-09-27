@@ -1,31 +1,38 @@
-*{
+/* general */
+* {
   box-sizing: border-box;
 }
+
 body, html {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
   max-width: 100vw;
   background-color: rgb(240, 248, 255);
-  font-family: 'Poppins', sans-serif;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
-
+h1, p, a, button {
+  font-family: 'Poppins', sans-serif;
+}
 .navbar {
   position: sticky;
-  z-index: 9999;
   top: 0;
   display: flex;
   background-color: rgb(174, 211, 237);
   justify-content: space-between;
   align-items: center;
   margin: 0px;
-  padding: 5px;
+  padding: 0.5%;
+  
+  z-index: 1000;
 }
 
 .logo {
@@ -34,25 +41,17 @@ body {
 }
 
 .logo-image {
-  width: auto;
-  max-height: 45px;
-  border-radius: 100%;
-  margin-right: 0px;
-}
-
-.logo-title {
-  margin: 7px;
-  color: black;
-  font-family: "Agbalumo";
-  font-size: 20px;
+  width: 20%;
+  height: auto;
+  border-radius: 30px ;
+  margin-right: 0;
 }
 
 .nav-buttons {
-  font-family: Arial, sans-serif;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.6rem; 
+  border-radius: 0.3rem; 
   color: black;
-  font-size: 20px;
+  font-size: 1.2rem; 
   text-decoration: none;
 }
 
@@ -62,31 +61,36 @@ body {
 
 footer {
   background-color: rgb(174, 211, 237);
-  padding: 20px;
+  padding: 1.25rem; /* 20px */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 0.6rem; /* 10px */
 }
-.footer-logo{
-  width:20%;
+
+.footer-logo {
+  width: 20%;
   height: auto;
 }
-.footer-section{
+
+.footer-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 1.25rem; /* 20px */
 }
-.footer-pages{
+
+.footer-pages {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-footer a i{
+
+footer a i {
   margin: 2%;
 }
+
 .hero{
     display: flex;
     justify-content: center;
@@ -94,7 +98,12 @@ footer a i{
 }
 .hero-text{
   max-width: 50%;
-  font-size: 25px;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 .hero img{
     width: 50%;
@@ -107,7 +116,7 @@ main{
     gap: 20px;
     margin: 3%;
 }
-aside{
+.side{
     background-color: #f1ebb9;
     padding: 2%;
     max-width: 20%;
@@ -167,4 +176,106 @@ aside{
   padding: 5%;
   max-width: 30%;
   background-color: aliceblue;
+}
+
+@media (max-width: 700px) {
+   .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.6rem;
+  }
+
+  .nav-buttons {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 80px;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .logo-image {
+    width: 100px;
+  }
+  
+  body {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.4rem, 4vw, 1.8rem); 
+    line-height: 1.2;
+  }
+
+  h2, .subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.5;
+  }
+
+  button, .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%; 
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap: 2%;
+  }
+  .contact-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .hero{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-text, .hero h1, .hero p{
+    width: 90vw;
+     text-align: center;
+  }
+  .hero img{
+    width: 30%;
+  }
+  main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .material{
+    flex-direction: row;
+    grid-column: 1span;
+  }
+  .material img{
+    width: 40%;
+  }
+  .side{
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
 }

@@ -248,7 +248,29 @@ footer a i{
   width: 40%;
   height: auto;
 }
-
+.sdg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  background-color: antiquewhite;
+  border-radius: 30px;
+  margin: 2%;
+  padding: 2%;
+}
+.sdg-images{
+  width: 40%;
+  height: auto;
+  display: flex;
+  gap: 2%;
+  
+}
+.sdg-img{
+  width: 50%;
+}
+.sdg-description{
+  width: 50%;
+}
 
 @media (max-width: 700px) {
    .navbar {
