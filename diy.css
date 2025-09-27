@@ -4,10 +4,10 @@
 }
 
 body, html {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
+  overflow-x: clip;
+  width: 100vw;
 }
 
 .wrapper {
@@ -15,6 +15,7 @@ body, html {
 }
 
 body {
+  
   max-width: 100vw;
   background-color: rgb(240, 248, 255);
 }
@@ -197,9 +198,7 @@ main{
     width: 100px;
   }
   
-  body {
-    padding: 0 1rem;
-  }
+
 
   h1 {
     font-size: clamp(1.2rem, 3.5vw, 1.8rem); 
@@ -256,7 +255,7 @@ main{
      text-align: center;
   }
   .hero img{
-    width: 30%;
+    width: 90%;
   }
   main{
     flex-direction: column;
