@@ -22,7 +22,7 @@ body {
 h1, p, a, button {
   font-family: 'Poppins', sans-serif;
 }
-p{ font-size: clamp(0.7rem, 1.4vw, 1.2rem);}
+p{ font-size: clamp(0.8rem, 1.4vw, 1.2rem);}
 h1{font-size:clamp(1.5rem, 4vw, 2.5rem);}
 .navbar {
   position: sticky;
@@ -141,7 +141,7 @@ footer a i {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  
 }
 .waste h1{
     width: 90%;
@@ -155,14 +155,20 @@ footer a i {
   padding:2%;
   margin: 2%;
   background-color: aliceblue;
-  width: 30%;
+  width: 50%;
   gap: 2%;
   font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+.waste-card p{
+  width: 55%;
 }
 .waste-image{
    display: flex;
    flex-direction: column;
    width: 40%;
+}
+.waste-image img{
+  width: 100%;
 }
 .recipes{
   display: flex;
@@ -174,11 +180,15 @@ footer a i {
 .recipes h1{
   font-size: 40px;
 }
+.recipe-card li{
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+}
 .recipe-card{
  display: flex;
- justify-content: space-between;
+ justify-content: flex-start;
  align-items: center;
  text-align: left;
+ gap: 3%;
  background-color: rgb(250, 247, 207);
  margin: 2%;
  padding: 2%;
@@ -186,13 +196,14 @@ footer a i {
  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 .recipe-card img{
-  width: 20%;
+  width: 30%;
   border-radius: 30px;
 }
-.separator{
-height:400px;
-width: 1%;
-background-color: black;
+.recipe-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
 }
 .ingredients{
   border-left: 1px solid gray;
@@ -305,10 +316,11 @@ background-color: black;
     width: 60%;
   }
   .recipe-card{
-    flex-direction: row;
+    flex-direction: column;
   }
   .recipe-card img{
-    width:35%
+    width:80%;
+    margin: 5%;
   }
   .ingredients{
     text-align: left;
