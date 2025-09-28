@@ -2,25 +2,24 @@
 <html>
     <head>
         <title>food recipes for cats</title>
-        <meta name="viewport"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="recipes.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-      <section class="navbar">
-            <a href="index.html" class="logo">
-             <img src="logo2.jpg" class="logo-image"> 
-             <p class="logo-title">Pawareness</p>
-           </a>
-           <nav class="nav-pages">
-              <a href="learn.html" class="nav-buttons" target="_blank">Learn</a>
-              <a href="act.html" class="nav-buttons">Act</a>
-               <a href="about.html" class="nav-buttons">About Us</a>
-            </nav>
-        </section>
-
+      <div class="navbar">
+    <a href="index.html" class="logo">
+      <img src="pawareness_logo2-removebg-preview.png" class="logo-image"> 
+    </a>
+    <nav class="nav-pages">
+      <a href="learn.html" class="nav-buttons" target="_blank">Learn</a>
+      <a href="act.html" class="nav-buttons">Act</a>
+      <a href="about.html" class="nav-buttons">About Us</a>
+    </nav> 
+  </div>
+      <div class="wrapper">
         <section class="hero">
             <img src="food-recipe.jpg">
             <div class="hero-text">
@@ -44,6 +43,7 @@
         
         <section class="waste">
             <h1>where to gather ingredients from?</h1>
+            <div class="waste-cards">
             <div class="waste-card">
                 <div class="waste-image">
                 <img src="butcher.jpg">
@@ -58,57 +58,99 @@
                 </div>
                 <p>Visit a local fish market or talk to fishermen. Fish heads, bones, and leftover pieces are often discarded, but they make a great protein source for stray cats.</p>
             </div>
+            </div>
         </section>
 
         <section class="recipes">
-            <h1>healthy Recipes that cats love</h1>
-            <div class="recipe-card">
-             <img src="mashed-veggies.jpg">
-             <div class="ingredients">
-                <p>carrots<br>zucchini<br>fish (serdine)</p>
-             </div>
-             <div class="steps">
-                <p>Boil carrot and zucchini until soft.<br>Mash them together into a smooth puree. <br>Add shreded sardine and Mix well and cool before serving.</p>
-             </div>
-            </div>
-            <div class="recipe-card">
-             <img src="chicken-veggies.jpg">
-             <div class="ingredients">
-                <p>white rice<br>chicken scraps (skin, cartilage, wings)</p>
-             </div>
-             <div class="steps">
-                <p>Boil chicken scraps in water until fully cooked.<br>Strain the meat and shred into small pieces.<br>Cook rice in the chicken broth for extra flavor.<br>Mix shredded chicken into rice.<br></p>
-             </div>
-            </div>
-            <div class="recipe-card">
-             <img src="pasta.jpg">
-             <div class="ingredients">
-                <p>pasta<br>eggs<br>canned tuna</p>
-             </div>
-             <div class="steps">
-                <p>Boil pasta and eggs until soft, drain well<br>drain tuna from excess oil<br>mix pasta, shredded eggs, and tuna well</p>
-             </div>
-            </div>
-        </section>
-        <footer>
+    <h1>Healthy Recipes that Cats Love</h1>
+
+    <div class="recipe-card">
+        <img src="mashed-veggies.jpg" alt="Mashed Veggies">
+        <div class="recipe-text">
+        <div class="ingredients">
+            <h2>Ingredients:</h2>
+            <ul>
+                <li>Carrots</li>
+                <li>Zucchini</li>
+                <li>Fish (sardine)</li>
+            </ul>
+        </div>
+        <div class="steps">
+            <h2>Steps:</h2>
+            <ol>
+                <li>Boil carrot and zucchini until soft.</li>
+                <li>Mash them together into a smooth puree.</li>
+                <li>Add shredded sardine and mix well.</li>
+                <li>Cool before serving.</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="chicken-veggies.jpg" alt="Chicken and Veggies">
+       <div class="recipe-text">
+        <div class="ingredients">
+            <h2>Ingredients:</h2>
+            <ul>
+                <li>White rice</li>
+                <li>Chicken scraps (skin, cartilage, wings)</li>
+            </ul>
+        </div>
+        <div class="steps">
+            <h2>Steps:</h2>
+            <ol>
+                <li>Boil chicken scraps in water until fully cooked.</li>
+                <li>Strain the meat and shred into small pieces.</li>
+                <li>Cook rice in the chicken broth for extra flavor.</li>
+                <li>Mix shredded chicken into rice.</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="pasta.jpg" alt="Pasta with Tuna">
+        <div class="recipe-text">
+        <div class="ingredients">
+            <h2>Ingredients:</h2>
+            <ul>
+                <li>Pasta</li>
+                <li>Eggs</li>
+                <li>Canned tuna</li>
+            </ul>
+        </div>
+        <div class="steps">
+            <h2>Steps:</h2>
+            <ol>
+                <li>Boil pasta and eggs until soft, then drain well.</li>
+                <li>Drain tuna from excess oil.</li>
+                <li>Mix pasta, shredded eggs, and tuna well.</li>
+            </ol>
+        </div>
+    </div>
+    </div>
+</section>
+
+        </div>
+       <footer>
           <section class="contact">
-             <a href="index.html" class="logo">
-             <img src="logo2.jpg" class="logo-image" alt="Pawareness Logo"> 
-             <p class="logo-title">Pawareness</p>
+             <div class="contact-logo">
+            <a href="index.html" class="logo">
+             <img src="pawareness_logo2-removebg-preview.png" class="logo-image" alt="Pawareness Logo"> 
              </a>
-             <div class="footer-bottom">
-             <p>&copy; 2025 Pawareness. All rights reserved.</p>
              </div>
-      
+             <div class="contact-links">
              <a href="https://github.com/meriem-abd" target="_blank">
                  <i class="fab fa-github fa-3x"></i>
              </a>
-             <a href="https://www.linkedin.com/in/meriem-abdeladim-956432314/" target="_blank">
+             <a href="https://www.linkedin.com/company/pawareness-initiative" target="_blank">
                  <i class="fab fa-linkedin fa-3x"></i>
              </a>
              <a href="mailto:meriemabdeladim@gmail.com">
                 <i class="fas fa-envelope fa-3x"></i>
              </a>
+             </div>
            </section>
 
            <section class="footer-pages">
@@ -128,7 +170,7 @@
 
              <div class="footer-section">
                  <h3>About</h3>
-                 <a href="about.html" class="nav-buttons">About Me</a>
+                 <a href="about.html" class="nav-buttons">About Us</a>
               </div>
          </section>
       </footer>

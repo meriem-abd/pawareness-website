@@ -252,7 +252,7 @@ footer a i{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3%;
+  gap: 5%;
   background-color: antiquewhite;
   border-radius: 30px;
   margin: 2%;
@@ -267,9 +267,11 @@ footer a i{
 }
 .sdg-img{
   width: 50%;
+   margin: 1%;
 }
 .sdg-description{
   width: 50%;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 @media (max-width: 700px) {
@@ -306,7 +308,7 @@ footer a i{
   }
 
   p {
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
     line-height: 1.5;
   }
 
@@ -382,5 +384,22 @@ footer a i{
   width: 90%;
   text-align: center;
 }
+.sdg-images{
+  align-items: center;
+  justify-content: center;
+  width: 40%;
   
+}
+.sdg-img{
+  width: 100%;
+ 
+}
+.sdg-description{
+  width: 90%;
+}
+.sdg{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 }
