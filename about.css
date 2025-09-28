@@ -187,6 +187,13 @@ footer a i{
   padding-top: 50px;
   margin-top: 0px;
 }
+.contact-me{
+  display: flex;
+  justify-content: flex-end;
+  gap: 3%;
+   margin-right: 10%;
+}
+
 .philo{
   display: flex;
   justify-content: center;
@@ -401,5 +408,8 @@ footer a i{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.contact-me{
+  justify-content: flex-end;
 }
 }
