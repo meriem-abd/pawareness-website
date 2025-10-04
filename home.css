@@ -238,7 +238,7 @@ main {
 .why-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 15rem); /* 240px */
+  grid-template-rows: repeat(2, 13rem); /* 240px */
   gap: 3%;
   margin: 3%;
 }
@@ -356,7 +356,7 @@ footer a i {
   
   .why-container{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 13rem); /* 200px */
+    grid-template-rows: repeat(4, 11rem); /* 200px */
   }
   .why2 h1{font-size: 1.5rem;}
   .why1{grid-area: 1/1/3/3;}
