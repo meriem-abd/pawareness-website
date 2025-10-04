@@ -444,16 +444,12 @@ footer a i{
   backface-visibility: hidden;
   background-color: aliceblue;
   border-radius: 8px;
-  pointer-events: none;
   
 }
 
 .ill-card-front img{
   width: 100%;
   height: auto;
-}
-.ill-card-front * , .ill-card-back * {
-  pointer-events: auto; /* text/images inside still usable */
 }
 .ill-card p,h2{
   margin: 0;
