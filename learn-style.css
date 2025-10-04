@@ -424,20 +424,6 @@ footer a i{
   margin-bottom: 50px;
   
 }
-.ill-card-front-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  pointer-events: none; /* children inside wrapper won’t block */
-}
-
-.ill-card-front-wrapper * {
-  pointer-events: auto; /* text/images still interactable */
-}
-
 
 .ill-card-inner {
   position: relative; 
