@@ -454,7 +454,7 @@ footer a i{
 .ill-card p,h2{
   margin: 0;
   text-align: center;
-  pointer-events: none;
+  
 }
 .ill-card-front h2{
   margin-top: 2%;
@@ -468,7 +468,7 @@ footer a i{
 }
 .ill-card-front{
   text-align: center;
-  pointer-events: none;
+
 }
 .ill-card:hover .ill-card-inner{
   transform: rotateY(180deg);

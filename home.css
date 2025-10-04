@@ -15,6 +15,7 @@ body, html {
 body {
   overflow-x: hidden;
   max-width: 100vw;
+    background-color: rgb(240, 248, 255);
 }
 
 h1, p, a, button {
@@ -258,33 +259,33 @@ main {
 }
 
 .why1 {
-  background-color: #262b46;
+  padding-bottom: 0px;
   grid-column: 1/4;
   grid-row: 1/3;
-  color: aliceblue;
+
 }
 
 .why2 {
   background-color: #d9e0f8;
   grid-column: 4/6;
-  grid-row: 1/2;
+  grid-row: 2/3;
   display: flex;
 }
 
 .why3 {
   background-color: #dc6e4a;
   grid-column: 4/5;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 .why4 {
   background-color: #ffeca0;
   grid-column: 5/6;
-  grid-row: 2/3;
+  grid-row: 1/2
 }
 
 .why-image {
-  width: 98%;
+  width: 99%;
   height: auto;
 }
 
@@ -359,9 +360,9 @@ footer a i {
   }
   .why2 h1{font-size: 1.5rem;}
   .why1{grid-area: 1/1/3/3;}
-  .why2{grid-area: 3/1/4/3;}
-  .why3{ grid-area: 4/1/5/2;}
-  .why4{grid-area: 4/2/5/3;}
+  .why2{grid-area: 4/1/5/3;}
+  .why3{ grid-area: 3/1/4/2;}
+  .why4{grid-area: 3/2/4/3;}
   
   .page{
     display: flex;
