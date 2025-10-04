@@ -71,23 +71,32 @@ function isInViewport(element) {
 let counted = false;
 
 window.addEventListener('scroll', () => {
-  const stats = document.getElementById('stats');
-  if (!stats) return; // <-- prevents the error if element doesn't exist
+  const stats = document.querySelectorAll('[data-target]');
+  if (!stats.length) return;
 
-  if (!counted && isInViewport(stats)) {
+  if (!counted && isInViewport(stats[0])) {
     counted = true;
-    let num = 0;
-    const target = +stats.getAttribute('data-target');
-    const suffix = stats.getAttribute('data-suffix') || '';
-    const speed = 5;
 
-    const timer = setInterval(() => {
-      num++;
-      stats.textContent = num + suffix;
-      if (num >= target) clearInterval(timer);
-    }, speed);
+    stats.forEach(stat => {
+      let num = 0;
+      const target = +stat.getAttribute('data-target');
+      const suffix = stat.getAttribute('data-suffix') || '';
+      const speed = 5;
+
+      const timer = setInterval(() => {
+        num++;
+        stat.textContent = num + suffix;
+        if (num >= target) clearInterval(timer);
+      }, speed);
+    });
   }
 });
+
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom >= 0;
+}
+
 
 
 function textOver(index){
