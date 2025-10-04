@@ -122,3 +122,8 @@ titles.forEach(title => {
     }
   });
 });
+document.querySelectorAll('.ill-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.querySelector('.ill-card-inner').classList.toggle('flip');
+  });
+});

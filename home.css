@@ -190,7 +190,7 @@ main {
 }
 
 .page:hover {
-  background-color: rgb(244, 240, 240);
+  
   transform: scale(1.05);
 }
 
