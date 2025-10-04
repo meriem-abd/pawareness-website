@@ -205,7 +205,7 @@ footer a i{
 }
 
 .stray-card-front h1 {
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
   margin: 0;
 }
 
@@ -231,6 +231,21 @@ footer a i{
 .stray-card.flip {
   transform: rotateY(180deg);
 }
+.flip-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 1rem;
+  color: #bbb;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*struggles*/
 
 .struggles-container{
   padding-top: 10vh;
@@ -301,7 +316,7 @@ footer a i{
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
   text-align: center;
 }
 .matter-card{
@@ -314,6 +329,7 @@ footer a i{
  align-items: center;
  padding: 5%;
 }
+  .matter-card h1{font-size: clamp(1.5rem, 2vw, 1.7rem);}
 .matter-card:hover{
  background-color: rgba(225, 223, 189, 0.421) ;
  transform: scale(1.05);
@@ -624,6 +640,11 @@ footer a i{
     display: flex;
     flex-direction: column;
   }
+  .matter-text{ padding: 5%;}
+  .matter-text h1{font-size: clamp(1rem, 2vw, 1.5rem);}
+  .matter-text p{font-size: clamp(0.7rem, 1.5vw, 1.2rem);}
+  .matter-card h1{font-size: clamp(0.9rem, 1.6vw, 1.5rem);}
+  .matter-card p{font-size: clamp(0.7rem, 1.2vw, 1.2rem);}
   .struggles-image{
     width: 90%;
   }
@@ -666,5 +687,8 @@ footer a i{
     justify-items: center;
     padding-bottom: 500px;
   }
+  .treat-button{
+  margin: 3%;
+}
   
 }

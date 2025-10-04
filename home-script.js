@@ -72,6 +72,8 @@ let counted = false;
 
 window.addEventListener('scroll', () => {
   const stats = document.getElementById('stats');
+  if (!stats) return; // <-- prevents the error if element doesn't exist
+
   if (!counted && isInViewport(stats)) {
     counted = true;
     let num = 0;
@@ -86,6 +88,7 @@ window.addEventListener('scroll', () => {
     }, speed);
   }
 });
+
 
 function textOver(index){
   document.getElementsByClassName('over')[index].style.opacity='1';
