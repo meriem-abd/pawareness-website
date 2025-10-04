@@ -573,6 +573,7 @@ footer a i{
     display: flex;
     flex-direction: column;
     align-items:  center;
+    justify-content: center;
     gap: 2%;
   }
   .contact-links{
@@ -580,7 +581,7 @@ footer a i{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20%;
+    gap: 10%;
   }
 
   .container {
