@@ -443,6 +443,7 @@ footer a i{
   backface-visibility: hidden;
   background-color: aliceblue;
   border-radius: 8px;
+   pointer-events: none;
 }
 
 .ill-card-front img{
