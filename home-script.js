@@ -123,9 +123,3 @@ titles.forEach(title => {
   });
 });
 
-document.querySelectorAll('.ill-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const inner = card.querySelector('.ill-card-inner');
-    inner.classList.toggle('flip'); // toggles forward/back
-  });
-});
