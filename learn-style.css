@@ -473,9 +473,7 @@ footer a i{
 .ill-card:hover .ill-card-inner{
   transform: rotateY(180deg);
 }
-.ill-card-inner.flip {
-  transform: rotateY(180deg);
-}
+
 .ill-introduction{
   display: flex;
   justify-content: center;
